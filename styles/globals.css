@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global body styles */
+body {
+  background-color: #ffffff; /* White background for a clean look */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utility classes for consistent padding and margins */
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Global link styles */
+a {
+  color: #4f46e5; /* Tailwind's indigo-600 */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Global button styles */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Tailwind Custom Animations from animate.css */
+@import 'animate.css/animate.min.css';
+
+/* Custom button and form styles */
+input, textarea {
+  border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4f46e5; /* Tailwind's indigo-600 */
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3); /* Tailwind's indigo-600 with opacity */
+}
+
+textarea {
+  resize: vertical;
+}
